@@ -1,0 +1,40 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+
+@import 'base/variables';
+@import 'base/mixins';
+* {
+/*     font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Playfair Display', serif; */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1044px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+/* @import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/buttons';
+@import 'blocks/carousel';
+@import 'blocks/divider';
+@import 'blocks/services';
+@import 'blocks/blog';
+@import 'blocks/contact';
+@import 'blocks/forms';
+@import 'blocks/pageup';
+@import 'blocks/modal'; */
+@import 'blocks/media';
+
+
+
+
+
+
+
+
+
+
