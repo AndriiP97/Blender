@@ -1,0 +1,18 @@
+.button {
+    margin-top: 51px;
+    width: 367.95px;
+    height: 80.67px;
+    background: $second-color;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue Cyr Black';
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &:hover {
+        box-shadow: 0px 0px 55px rgba(202, 0, 80, 0.51);
+    }
+}

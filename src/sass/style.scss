@@ -4,18 +4,38 @@
 @import 'base/variables';
 @import 'base/mixins';
 * {
-/*     font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Playfair Display', serif; */
+    font-family: 'Helvetica Neue Cyr Black', sans-serif;
+    font-family: 'Gotham Pro Black', 'Gotham Pro Medium', 'Gotham Pro Regular', sans-serif;
+    font-family: 'Montserrat SemiBold', 'Montserrat Regular', sans-serif;
+    font-family: 'Gilroy Heavy', 'Gilroy SemiBold', 'Gilroy Medium', 'Gilroy Regular', sans-serif;
+
+
+
+    /* font-family: 'Helvetica Neue Cyr Black', sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
+    font-family: 'Gotham Pro Medium', sans-serif;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-family: 'Gilroy Heavy', sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif;
+    font-family: 'Gilroy Medium', sans-serif;
+    font-family: 'Gilroy Regular', sans-serif; */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 1044px;
+    max-width: 1042px;
     margin: 0 auto;
 }
 
 @import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/about';
+@import 'blocks/title';
+
 /* @import 'blocks/header';
 @import 'blocks/title';
 @import 'blocks/buttons';
@@ -27,7 +47,7 @@
 @import 'blocks/forms';
 @import 'blocks/pageup';
 @import 'blocks/modal'; */
-@import 'blocks/media';
+/* @import 'blocks/media'; */
 
 
 
