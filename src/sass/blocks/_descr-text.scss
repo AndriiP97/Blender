@@ -1,0 +1,19 @@
+.descr {
+    margin-top: 80px;
+    font-family: 'Gotham Pro Regular';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    color: #E2521D;
+}
+.text {
+    margin-top: 17px;
+    font-family: 'Gotham Pro Regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: #8997AB;
+    &_mt50 {
+        margin-top: 50px;
+    }
+}
