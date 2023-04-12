@@ -1,53 +1,302 @@
-/* .program {
-    background: $main-color;
-    min-height: 500px;
-    &__wrapper {
-        margin-top: 55px;
-    }
-    &__accordion {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 25px 67px 25px 89px;
-        margin-top: 20px;
-        background-color: #0E1B28;
-        color: #FFFFFF;
-        width: 1021px;
-        height: 100px;
-        border: none;
-        border-radius: 2px;
-        outline: none;
-        font-size: 18px;
-        transition: 0.4s;
-        ol {
-            padding: 12px 0;
-            min-width: 100px;
-            li {
-                
-            }
-        }
-    }
-    
-    .active, .accordion:hover {
-        background-color: #ccc;
-    }
-    
-    .accordion:after {
-        content: '\002B';
-        color: #777;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
-    
-    .active:after {
-        content: "\2212";
-    }
-    
-    &__panel {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-} */
+.program {
+	background: $main-color;
+	min-height: 500px;
+	&__wrapper {
+		margin-top: 55px;    
+	}
+
+	&__accordion {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 67.64px 25px 89px;
+		margin: 0 auto;
+		margin-top: 20px;
+		background-color: #0E1B28;
+		width: 1021px;
+		height: 100px;
+		border: none;
+		border-radius: 2px;
+		outline: none;
+		font-size: 18px;
+		transition: 0.4s;
+	}
+
+	&__spoiler {
+		margin: 0;
+		margin-left: 20px;
+		li {
+			font-family: 'Montserrat SemiBold';
+			font-weight: 600;
+			font-size: 15px;
+			color: #FFFFFF;
+		}
+	}
+
+	.active, .program__accordion:active {
+	background-color: $second-color;
+	}
+
+	.program__accordion {
+		&:after {
+			content: '\2716';
+			color: $second-color;
+			width: 50px;
+			height: 50px;
+			font-size: 20px;
+			border-radius: 100%;
+			border: 1px solid $second-color;
+			transform: rotate(-45deg);
+		}
+	}
+
+	.active:after {
+		content: "\2716";
+		color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		transform: rotate(45deg);
+	}
+
+
+
+	&__panel {
+		width: 1021px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+		padding: 0 78px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		list-style-type: none;
+		li {
+			color: #8997AB;
+			font-size: 18px;
+			line-height: 34px;
+			font-weight: 500;
+			font-family: 'Gotham Pro Regular';
+		}
+	}
+
+
+/* 	&__wrapper {
+		margin-top: 55px;    
+	}
+
+	&__accordion {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 67.64px 25px 89px;
+		margin: 0 auto;
+		margin-top: 20px;
+		background-color: #0E1B28;
+		width: 1021px;
+		height: 100px;
+		border: none;
+		border-radius: 2px;
+		outline: none;
+		font-size: 18px;
+		transition: 0.4s;
+	}
+
+	&__spoiler {
+		margin: 0;
+		margin-left: 20px;
+		li {
+			font-family: 'Montserrat SemiBold';
+			font-weight: 600;
+			font-size: 15px;
+			color: #FFFFFF;
+		}
+	}
+
+	.active, .program__accordion:active {
+	background-color: $second-color;
+	}
+
+	&__round {
+		display: flex; 
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		color: $second-color;
+		width: 50px;
+		height: 50px;
+		right: 67.64px;
+		border-radius: 100%;
+		border: 1px solid $second-color;
+		&:before {
+			content: '';
+			display: block;
+			width: 17.25px; 
+			height: 1px; 
+			background-color: $second-color;
+			transition: 0.3s all;
+		}
+		&:after {
+			content: '';
+			position: absolute; 
+			left: 50%;
+			transform: translateX(-50%);
+			display: block; 
+			height: 17.25px;
+			width: 1px;
+			background-color: $second-color;
+			transition: 0.3s all;
+		}
+	}
+
+	.active {
+		&__round {
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			border: 1px solid #FFFFFF;
+		}
+	} */
+
+/* 	.program__accordion {
+		&:after {
+			content: '\2716';
+			color: $second-color;
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			border: 1px solid $second-color;
+			transform: rotate(-45deg);
+		}
+	}
+
+	.active:after {
+		content: "\2716";
+		color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		transform: rotate(45deg);
+	} */
+
+
+
+/* 	.program__panel {
+		width: 1021px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+		padding: 0 89px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		list-style-type: none;
+		li {
+			color: #8997AB;
+			font-size: 18px;
+			line-height: 34px;
+			font-weight: 500;
+			font-family: 'Gotham Pro Regular';
+		}
+	} */
+}
+
+
+/* <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.program__accordion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 67px 25px 89px;
+	margin-top: 20px;
+	background-color: #0E1B28;
+	color: #FFFFFF;
+	width: 1021px;
+	height: 100px;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	font-size: 18px;
+	transition: 0.4s;
+}
+
+.active, .program__accordion:hover {
+	background-color: #E2521D;
+}
+
+.program__accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2212";
+}
+
+
+
+.program__panel {
+	margin-top: 30px;
+	padding: 0 89px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	list-style-type: none;
+}
+</style>
+</head>
+<body>
+
+	<button class="program__accordion"><ol class="program__spoiler"><li>Основи</ol></li></button>
+	<ul class="program__panel">
+		<li>Примитивы  </li>
+		<li>Основы лайна</li>
+		<li>Композиция масс</li>
+		<li>Построение</li>
+		<li>Работа с референсами</li>
+		<li>Pro. Лайн</li>
+	</ul>
+
+	<button class="program__accordion"><ol class="program__spoiler"><li>Основи</ol></li></button>
+	<ul class="program__panel">
+		<li>Примитивы  </li>
+		<li>Основы лайна</li>
+		<li>Композиция масс</li>
+		<li>Построение</li>
+		<li>Работа с референсами</li>
+		<li>Pro. Лайн</li>
+	</ul>
+	<button class="program__accordion"><ol class="program__spoiler"><li>Основи</ol></li></button>
+	<ul class="program__panel">
+		<li>Примитивы  </li>
+		<li>Основы лайна</li>
+		<li>Композиция масс</li>
+		<li>Построение</li>
+		<li>Работа с референсами</li>
+		<li>Pro. Лайн</li>
+	</ul>
+
+<script>
+var acc = document.getElementsByClassName("program__accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	});
+}
+</script>
+
+</body>
+</html> */
