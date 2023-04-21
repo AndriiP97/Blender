@@ -1,0 +1,76 @@
+.record {
+    min-height: 673px;
+    background: $main-color;
+    &__btn {
+        width: 1042px;
+        height: 177px;
+        background: $second-color;
+        border: none;
+        font-family: 'Gotham Pro Bold';
+        font-weight: 700;
+        font-size: 23px;
+        color: #FFFFFF;
+        span {
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+            font-weight: 400;
+            font-family: 'Gotham Pro Regular';
+        }
+
+    }
+    &__wrapper {
+        margin-top: 35px;
+        margin-left: 57px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 284px;
+        display: flex;
+        justify-content: space-between;
+        &:before {
+			content: '';
+			width: 55px;
+			height: 55px;
+			background: url('../icons/well/mark.svg') center (center / cover) no-repeat;
+		}
+    }
+    &__descr {
+        width: 199px;
+        font-family: 'Gotham Pro Medium';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+    hr {
+        margin: 66px 31px 0 75px;
+        border: 1px solid #706470;
+    }
+    &__discount {
+        margin-top: 23px;
+        margin-left: 265px;;
+        font-family: 'Gilroy Heavy';
+        font-weight: 800;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    &__price {
+        color: #FA4682;
+    }
+    &__price-old {
+        color: rgba($color: #FFFFFF, $alpha: 0.5);
+    }
+    &__text {
+        margin-top: 36px;
+        font-family: 'Gilroy Regular';
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__wrapper-form {
+        margin-left: 306px;
+    }
+}

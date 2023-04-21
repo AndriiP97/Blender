@@ -1,0 +1,65 @@
+.footer {
+    padding: 66px 0 30px 0;
+    background-color: $main-color;
+    &__wrapper {
+        /* margin-left: 76px;
+        display: grid;
+        grid-template-columns: 233px 300px 233px;
+        grid-template-rows: minmax(113px, auto); */
+        margin-left: 76px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-right: 97px;
+        &_mr101 {
+            margin-right: 101px;
+        }
+        &_mrn {
+            margin-right: 0;
+        }
+    }
+    &__info {
+        font-family: 'Gilroy Regular';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #FFFFFF;
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: 'Gilroy Regular';
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    &__payment {
+        font-family: 'Gilroy SemiBold';
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        &_mt7 {
+            margin-top: 7px;
+        }
+    }
+    &__icons {
+        width: 195px;
+        display: flex;
+        justify-content: space-between;
+        &_w300 {
+            width: 300px;
+        }
+    }
+    &__link {
+        display: block;
+        font-family: 'Gilroy Regular';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #FFFFFF;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
