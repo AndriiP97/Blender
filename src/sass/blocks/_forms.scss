@@ -11,7 +11,6 @@
         margin-bottom: 24px;
         border: none;
         padding: 0 27px;
-        color: #ffffff;
         font-size: 18px;
         font-family: 'Gotham Pro Medium';
         font-weight: 500;
@@ -33,23 +32,12 @@
                 height: 21px;
                 background: #fff;
                 margin-right: 16px;
+                cursor: pointer;
             }
         }
         input[type="checkbox"]:checked + label::before {
 			background: url('../icons/agree.svg') center (center / cover) no-repeat;
         }
-        /* label {
-            &:before {
-                content: '';
-                display: inline-block;
-                width: 21px;
-                height: 21px;
-                background: #ffffff;                
-            }
-        }
-        input [type="checkbox"]:checked + labe::before {
-            background: #45E5C8;
-        } */
         &_w465 {
             width: 465px;
         }
@@ -60,6 +48,11 @@
         font-size: 12px;
         line-height: 17px;
         color: rgba(255, 255, 255, 0.6);
+        span {
+            font-family: 'Gilroy Regular';
+            font-weight: 400;
+            color: #FFFFFF;
+        }
         &_w421 {
             width: 421px;
         }

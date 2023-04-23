@@ -16,7 +16,7 @@
             <div class="promo__wrapper">
                 <h1 class="promo__title">КОНЦЕПТ АРТ</h1>
                 <div class="promo__text">Научись мыслить, как концепт-художник, придумывать и воплощать в жизнь оригинальные идеи</div>
-                <button class="button">записаться на курс</button>
+                <button data-modal="consultation" class="button">записаться на курс</button>
             </div>
         </div>
     </section>
@@ -115,7 +115,7 @@
         <div class="container">
             <h2 class="title title_center">Для кого этот курс?</h2>
             <div class="this-course__item">
-                <div class="descr">Курс подойдет абсолютно любому. Никакими дополнительными знаниями или навыками моделирования обладать не нужно.</div>
+                <div class="descr descr_fz30">Курс подойдет абсолютно любому. Никакими дополнительными знаниями или навыками моделирования обладать не нужно.</div>
                     <div class="text text_mt50">А так же а также курс будет полезен для тех, кто хочет восполнить пробелы в знании программы или получить дополнительные навыки в работе с софтом.</div>
             </div>
         </div>
@@ -131,7 +131,7 @@
                     <div class="courses__descr">Получи доступ от преподавателя к записанным видеоматериалам курса</div>
                 </div>
 
-                <div class="courses__item">
+                <div class="courses__item courses__item_w430">
                     <div class="courses__icon"><img src="icons/well/platform.svg" alt="platform"></div>
                     <h3 class="courses__subtitle courses__subtitle_mt45">Платформа</h3>
                     <div class="courses__descr">Обучение происходит на нашей собственной FF-платформе. Благодаря этому, ты можешь проходить курс в удобном для тебя режиме.</div>
@@ -143,7 +143,7 @@
                     <div class="courses__descr">Твое обучение будет сопровождаться поддержкой наставника, который будет помогать в прохождении и объяснять то, что тебе непонятно. Все возникшие вопросы по курсу так же можно будет задать наставнику.</div>
                 </div>
 
-                <div class="courses__item">
+                <div class="courses__item courses__item_w430">
                     <div class="courses__icon"><img src="icons/well/hometasks.svg" alt="hometasks"></div>
                     <h3 class="courses__subtitle courses__subtitle_mt35">Домашние задания</h3>
                     <div class="courses__descr">У нас для тебя есть увлекательнейшие домашние задания, которые помогут тебе закрепить изученный материал и получить фидбэк от наставника.</div>
@@ -154,7 +154,7 @@
 
     <section class="record">
         <div class="container">
-            <button class="record__btn">ЗАПИСАТЬСЯ НА КУРС <span>2 месяца</span></button>
+            <button data-modal="consultation" class="record__btn">ЗАПИСАТЬСЯ НА КУРС <span>2 месяца</span></button>
 
             <div class="record__wrapper">
                 <div class="record__item">
@@ -178,13 +178,15 @@
             <div class="record__text">Заполните форму, чтобы получить доступ к курсу</div>
 
            <div class="record__wrapper-form">
-                <form class="record-form" action="#">
-                    <div class="record-form__input record-form__input_w465"><input name="email" placeholder="Ваш email:" type="email"></div> 
+                <form id="access-form" class="record-form" action="#">
+                    <div class="record-form__input record-form__input_w465">
+                        <input name="email" placeholder="Ваш email:" type="email">
+                    </div> 
                     <button class="button button_submit button_submit_w465">получить доступ</button>
                     <div class="record-form__policy record-form__policy_w465">
-                        <input type="checkbox" required id="policy">
+                        <input type="checkbox" id="policy">
                         <label for="policy"></label>
-                        <div class="record-form__policy-text record-form__policy-text_w421">Даю согласие на обработку персональных данных, а также ознакомлен с публичной офертой и тарифами</div>
+                        <div class="record-form__policy-text record-form__policy-text_w421">Даю <span>согласие</span> на <span>обработку персональных данных</span>, а также ознакомлен с <span>публичной офертой</span> и <span>тарифами</span></div>
                     </div>
                 </form>
            </div>
@@ -249,26 +251,37 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="record-form" action="#">
-                    <div class="record-form__input"><input name="name" placeholder="Ваше имя" type="text"></div>
-                    <div class="record-form__input"><input name="phone" placeholder="Ваш телефон"></div>
-                    <div class="record-form__input"><input name="email" placeholder="Ваш email:" type="email"></div>
+                    <div class="record-form__input">
+                        <input name="name" placeholder="Ваше имя" type="text">
+                    </div>
+                    <div class="record-form__input">
+                        <input name="phone" placeholder="Ваш телефон"> 
+                    </div>
+                    <div class="record-form__input">
+                        <input name="email" placeholder="Ваш email:" type="email">
+                    </div>
                     <button class="button button_submit">записаться на курс</button>
                     <div class="record-form__policy">
-                        <input type="checkbox" required id="policy">
-                        <label for="policy"></label>
-                        <div class="record-form__policy-text">Даю согласие на обработку персональных данных, а также ознакомлен с публичной офертой и тарифами</div>
+                        <input type="checkbox" id="policy-record">
+                        <label name="checkbox" for="policy-record"></label>
+                        <div class="record-form__policy-text">Даю <span>согласие</span> на <span>обработку персональных данных</span>, а также ознакомлен с <span>публичной офертой</span> и <span>тарифами</span></div>
                     </div>
             </form>
         </div>
 
-  <!--       <div class="modal modal_mini" id="thanks">
+        <div class="modal modal_mini" id="thanks">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с вами 
                 в ближайшее время!</div>
-        </div> -->
+        </div>
     </div>
+
     
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

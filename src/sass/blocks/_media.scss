@@ -1,0 +1,25 @@
+
+@media (max-width: 1200px) { /* щоб не було ломки, і контайнер адекватно відображався, ставимо 960рх і так з 720 і тд */
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
