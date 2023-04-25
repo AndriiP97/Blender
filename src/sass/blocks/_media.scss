@@ -14,6 +14,11 @@
             margin-left: 405px
         }
     }
+    .courses {
+        &__wrapper {
+            margin-left: 0;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -52,6 +57,11 @@
     .this-course {
         &__item {
             margin-left: 285px
+        }
+    }
+    .courses {
+        &__item {
+            max-width: 330px;
         }
     }
 }
@@ -130,6 +140,11 @@
             }
         }
     }
+    .courses {
+        &__item {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -138,8 +153,8 @@
         padding: 0 20px;
     }
     .promo {
-        min-height: 400px;
-        padding: 120px 0 70px 0;
+        min-height: 600px;
+        padding: 140px 0 70px 0;
         background: url("../../img/first_screen/first_bg_screen_mobile.jpg") center (center/cover) no-repeat;
         &__logo {
             width: 68px;
@@ -149,6 +164,7 @@
             }
         }
         &__wrapper {
+            height: 377px;
             width: 100%;
         } &__title {
             font-size: 40px;
@@ -161,6 +177,7 @@
         }
     }
     .button {
+        margin-top: 114px;
         width: 100%;
         height: 63px;
         font-size: 12px;
@@ -263,9 +280,9 @@
         }
     }
     .this-course {
-        padding-top: 70px;
-        min-height: 852px;
-        background: url("../../img/third_screen/third_screen_bg_mobile.jpg") center (center/cover) no-repeat;
+        padding: 70px 0 70px 0;
+        min-height: 400px;
+        background: $main-color;
         .title {
             &_center {
                 text-align: left;
@@ -286,6 +303,19 @@
             &_mt50 {
                 margin-top: 25px;
             }
+        }
+    }
+    .courses {
+        .title {
+            &_center {
+                text-align: left;
+                font-size: 30px;
+                line-height: 44px;
+            }
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 28px;
         }
     }
 }
