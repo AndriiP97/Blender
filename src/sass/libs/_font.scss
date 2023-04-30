@@ -61,6 +61,16 @@
 }
 
 @font-face {
+    font-family: 'Gilroy Black';
+    font-display: swap;
+    src: local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/Gilroy-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Gilroy Heavy';
     font-display: swap;
     src: local('Gilroy-Heavy'),

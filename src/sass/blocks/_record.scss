@@ -17,7 +17,6 @@
             font-weight: 400;
             font-family: 'Gotham Pro Regular';
         }
-
     }
     &__wrapper {
         margin-top: 35px;
@@ -29,6 +28,7 @@
         width: 284px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &:before {
 			content: '';
 			width: 55px;
@@ -47,6 +47,9 @@
     hr {
         margin: 66px 31px 0 75px;
         border: 1px solid #706470;
+    }
+    &__promotion {
+        display: none;
     }
     &__discount {
         margin-top: 23px;

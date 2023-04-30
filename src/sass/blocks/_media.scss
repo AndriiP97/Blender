@@ -19,6 +19,27 @@
             margin-left: 0;
         }
     }
+    .record {
+        &__discount {
+            margin-left: 0;
+            text-align: center;
+        }
+        &__wrapper-form {
+            margin-left: 247.5px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            justify-content: space-between;
+            margin: 0;
+        }
+        &__item {
+            margin-right: 0;
+            &_mr101 {
+                margin: right 0;;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -62,6 +83,53 @@
     .courses {
         &__item {
             max-width: 330px;
+        }
+    }
+    .record {
+        &__wrapper {
+            margin-left: 0;
+        }
+        &__item {
+            width: 220px;
+        }
+        &__descr {
+            width: 150px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        hr {
+            margin: 66px 31px 0 31px;
+        }
+        &__discount {
+            margin-left: 0;
+            text-align: center;
+        }
+        &__wrapper-form {
+            margin-left: 127.5px;
+        }
+    }
+    .footer {
+        &__info {
+            font-size: 12px;
+            line-height: 24px;
+            a {
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+        &__payment {
+            font-size: 12px;
+            line-height: 19px;
+        }
+        &__icons {
+            width: 175px;
+            &_w300 {
+                width: 280px;
+            }
+        }
+        &__link {
+            font-size: 12px;
+            line-height: 24px;
         }
     }
 }
@@ -145,12 +213,80 @@
             max-width: 100%;
         }
     }
+    .record {
+        &__wrapper {
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-top: 40px;
+            width: 250px;
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 34px;
+            width: 185px;
+        }
+        hr {
+            display: none;
+        }
+        &__promotion {
+            margin-top: 53px;
+            display: block;
+            font-family: 'Gilroy Black';
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 43px;
+            text-align: center;
+            color: $second-color;
+        }
+        &__discount {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__price {
+            color: $second-color;
+        }
+        &__wrapper-form {
+            margin-left: 37.5px;
+        }
+    }
+    .footer {
+        &__item {
+            margin-bottom: 20px;
+            &_mrn {
+                margin-bottom: 0;
+            }
+        }
+        &__info {
+            font-size: 14px;
+            line-height: 28px;
+            a {
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+        &__payment {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__icons {
+            width: 175px;
+            &_w300 {
+                width: 280px;
+            }
+        }
+        &__link {
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .container {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .promo {
         min-height: 600px;
@@ -316,6 +452,140 @@
         &__descr {
             font-size: 14px;
             line-height: 28px;
+        }
+    }
+    .record {
+        &__btn {
+            font-size: 20px;
+            span {
+                font-size: 14px;
+            }
+        }
+        &__btn-text {
+            width: 170px;
+        }
+        &__item {
+            width: 296px;
+        }
+        &__descr {
+            width: 212px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        .record-form {
+            &__input {
+                &_w465 {
+                    input {
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 19px;
+                    }
+                }
+            }
+            &_center {
+                display: flex;
+                margin: 0 auto;
+                margin-top: 25px;
+            }
+            &__policy {
+                margin-top: 19px;
+                &_w465 {
+                    width: 100%;
+                }
+            }
+            &__policy-text {
+                &_w421 {
+                    width: 100%;
+                }
+            }
+        }
+        &__discount {
+            margin-top: 13px;
+        }
+        &__text {
+            margin-top: 32px;
+        }
+        &__wrapper-form {
+            margin-left: 0;
+        }
+        .button {
+            margin: 0;
+        }
+        label.error {
+            width: 100%;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__item {
+            order: 2;
+            &_mr101 {
+                order: 1;
+            }
+            &_mrn {
+                order: 3;
+            }
+        }
+        &__icons {
+            &_w300 {
+                width: 244px;
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .modal {
+        min-height: 400px;
+        width: 220px;
+        padding: 18px 10px 10px 10px;
+        &__close {
+            right: -40px;
+            img {
+                width: 70%;
+            }
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+        &__descr {
+            font-size: 9px;
+        }
+        &_mini {
+            min-height: 140px;
+        }
+        .record-form {
+            width: 100%;
+            input {
+                margin-bottom: 10px;
+                height: 40px;
+                width: 100%;
+            }
+            &__policy {
+                margin-top: 10px;
+                label {
+                    margin: 0;
+                    &:before {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 16px;
+                    }
+                }
+            }
+            &__policy-text {
+                font-size: 8px;
+            }
+        }
+        .button {
+            margin-top: 0;
+            height: 40px;
+        }
+        label.error {
+            font-size: 9px;
+            margin-bottom: 10px;
         }
     }
 }
